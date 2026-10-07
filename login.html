@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touareg Store - Connexion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <div class="login-header">
+          <h1>Touareg Store</h1>
+          <p>Bienvenue ! Remplissez vos informations pour accéder au site</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="firstName">Prénom *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Ex: Ahmed"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Nom *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Ex: Touareg"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nationality">Nationalité *</label>
+            <select id="nationality" name="nationality" required>
+              <option value="">-- Sélectionnez votre nationalité --</option>
+              <option value="Mali">Mali</option>
+              <option value="Sénégal">Sénégal</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+              <option value="Niger">Niger</option>
+              <option value="Mauritanie">Mauritanie</option>
+              <option value="Guinée">Guinée</option>
+              <option value="Bénin">Bénin</option>
+              <option value="Togo">Togo</option>
+              <option value="Cameroun">Cameroun</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Numéro de téléphone *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Ex: +223 93 42 67 01"
+              required
+            />
+          </div>
+
+          <button type="submit" class="submit-btn">Accéder au site</button>
+        </form>
+
+        <div class="login-footer">
+          <p class="info-text">
+            ✓ Vos données sont sécurisées et utilisées uniquement pour les commandes
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script-login.js"></script>
+  </body>
+</html>
